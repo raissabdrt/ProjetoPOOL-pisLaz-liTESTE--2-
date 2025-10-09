@@ -1,0 +1,14 @@
+Passo a Passo para Rodar o Site
+1. Navegar para o Diretório Correto 
+//Localização no meu computador:
+cd "C:\Users\isold\Downloads\ProjetoPOOLápisLazúliTESTE\ProjetoPOOLápisLazúliTESTE\demo"
+
+2. Compilar o Projeto
+.\mvnw.cmd compile
+
+3. Executar a Aplicação
+.\mvnw.cmd spring-boot:run
+OU (alternativa se o Maven wrapper não funcionar):
+java -cp "target\classes;target\dependency\*" com.example.demo.projetoPOO.ProjetoPooApplication
+
+Página principal (Navegador): http://localhost:8080
