@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Home — Lápis Lazúli</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+    }
+
+    .topbar .icon-btn {
+      background: #222;
+      border: 1px solid #4b2ca0;
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: #eee;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .topbar .icon-btn:hover {
+      background: #4b2ca0;
+      color: #fff;
+    }
+
+    .filter-box {
+      background: #111;
+      border-radius: 12px;
+      padding: 15px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+      box-shadow: 0 0 12px rgba(154, 143, 255, 0.3);
+    }
+
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .filter-row input,
+    .filter-row select {
+      border-radius: 8px;
+      border: 1px solid #4b2ca0;
+      background: #222;
+      color: #eee;
+      padding: 10px;
+    }
+
+    .filter-row button {
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: #4b2ca0;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .filter-row button:hover {
+      background: #6d47d9;
+    }
+
+    .logo-container img {
+      max-width: 220px;
+      filter: drop-shadow(0 0 12px #6d47d9);
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <button id="backToMenu" class="icon-btn">← Menu</button>
+    <div style="display:flex;gap:8px;align-items:center">
+      <button id="logoutButton" class="icon-btn">Sair</button>
+      <button onclick="location.href='content_form.html'" class="icon-btn">+ Cadastrar</button>
+    </div>
+  </div>
+
+  <div class="logo-container"><img src="logo.png" alt="logo"></div>
+
+  <div class="filter-box">
+    <div class="filter-row">
+        <input id="searchInput" placeholder="Buscar por título...">
+        <select id="filterCategory">
+            <option value="all">Todas as categorias</option>
+        </select>
+        <select id="filterRating">
+            <option value="all">Todas as avaliações</option>
+        </select>
+        <button id="searchButton">Buscar</button> 
+        <button id="clearFilters">Limpar</button>
+    </div>
+</div>
+
+<div id="contentGrid" class="content"></div> 
+
+<script src="home.js"></script>
+</body>
+</html>

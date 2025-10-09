@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Avaliar Mídia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <button onclick="history.back()" class="icon-btn back-btn">← Voltar</button>
+    <button id="logoutButtonTop3" class="icon-btn">Sair</button>
+  </div>
+  <div class="logo-container"><img src="logo.png" alt="logo"></div>
+  <div class="form-container small">
+    <h2>Avaliar Mídia</h2>
+    <p id="mediaTitle"></p> 
+    
+    <div class="stars" id="reviewStars">
+      <span class="star" data-value="1">★</span>
+      <span class="star" data-value="2">★</span>
+      <span class="star" data-value="3">★</span>
+      <span class="star" data-value="4">★</span>
+      <span class="star" data-value="5">★</span>
+    </div>
+    <textarea id="reviewComment" placeholder="Escreva sua resenha (opcional)" rows="4"></textarea>
+    <button id="submitReview" class="primary">Enviar avaliação</button>
+    <p id="reviewMessage"></p>
+  </div>
+  <script src="login.js"></script>
+  <script src="review.js"></script>
+</body>
+</html>
