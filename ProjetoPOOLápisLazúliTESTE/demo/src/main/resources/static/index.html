@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lápis Lazúli — Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logo-container"><img src="logo.png" alt="logo"></div>
+  <div class="form-container small">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input id="email" type="email" placeholder="E-mail" required>
+      <input id="password" type="password" placeholder="Senha" required>
+      <button class="primary" type="submit">Entrar</button>
+    </form>
+    <div class="action-row">
+      <button onclick="location.href='register.html'">Criar conta</button>
+      <button onclick="location.href='menu.html'">Menu</button>
+    </div>
+    <p id="loginMessage"></p>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

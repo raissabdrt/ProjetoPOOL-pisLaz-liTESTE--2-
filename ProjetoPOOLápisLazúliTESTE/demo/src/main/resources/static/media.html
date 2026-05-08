@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Detalhes da Mídia — Lápis Lazúli</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto 20px;
+    }
+
+    .topbar .icon-btn {
+      background: #222;
+      border: 1px solid #4b2ca0;
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: #eee;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .topbar .icon-btn:hover {
+      background: #4b2ca0;
+      color: #fff;
+    }
+
+    .media-details {
+      background: #111;
+      border-radius: 12px;
+      padding: 25px;
+      max-width: 800px;
+      margin: 0 auto;
+      box-shadow: 0 0 15px rgba(154, 143, 255, 0.3);
+    }
+
+    .media-details h1 {
+      color: #9f7fff;
+      margin-bottom: 10px;
+    }
+
+    .media-category {
+      color: #aaa;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .media-rating {
+      color: #ffd700;
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .media-details h2 {
+      color: #9f7fff;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .media-details p {
+      color: #eee;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .reviews-list {
+      margin-top: 20px;
+    }
+
+    .review-card {
+      background: #222;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-left: 4px solid #4b2ca0;
+    }
+
+    .review-rating {
+      color: #ffd700;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: #4b2ca0;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 20px;
+    }
+
+    .primary:hover {
+      background: #6d47d9;
+    }
+
+    .logo-container img {
+      max-width: 220px;
+      filter: drop-shadow(0 0 12px #6d47d9);
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <button onclick="history.back()" class="icon-btn">← Voltar</button>
+    <button id="logoutButton" class="icon-btn">Sair</button>
+  </div>
+
+  <div class="logo-container">
+    <img src="logo.png" alt="logo">
+  </div>
+
+  <div id="mediaContainer">
+    <h2>Carregando detalhes...</h2>
+  </div>
+
+  <script src="login.js"></script>
+  <script src="media.js"></script>
+</body>
+</html>

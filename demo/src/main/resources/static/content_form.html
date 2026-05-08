@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cadastrar Conteúdo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* COMENTÁRIO: Mantendo o bloco de estilo visual específico da página */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto 20px;
+    }
+    .topbar .icon-btn {
+      background: #222;
+      border: 1px solid #4b2ca0;
+      padding: 8px 14px;
+      border-radius: 8px;
+      color: #eee;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .topbar .icon-btn:hover {
+      background: #4b2ca0;
+      color: #fff;
+    }
+
+    .form-container {
+      background: #111;
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(154, 143, 255, 0.3);
+    }
+
+    .form-container h2 {
+      color: #9f7fff;
+      margin-bottom: 20px;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #4b2ca0;
+      border-radius: 8px;
+      background: #222;
+      color: #eee;
+    }
+
+    .form-container input[type="file"] {
+      background: transparent;
+      border: none;
+      padding: 5px;
+      color: #ccc;
+    }
+
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      background: #4b2ca0;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+    .form-container button:hover {
+      background: #6d47d9;
+    }
+
+    .logo-container img {
+      max-width: 200px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 12px #6d47d9);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <button onclick="location.href='menu.html'" class="icon-btn">← Voltar para o Menu</button>
+    <button id="logoutButtonTop" class="icon-btn">Sair</button>
+  </div>
+
+  <div class="logo-container">
+    <img src="logo.png" alt="logo">
+  </div>
+
+  <div class="form-container">
+    <h2>Cadastrar Conteúdo</h2>
+    <form id="contentForm" enctype="multipart/form-data">
+      <input id="titulo" name="titulo" placeholder="Título" required>
+      <input id="ano" name="ano" type="number" placeholder="Ano" required>
+
+      <select id="categoria" name="categoria">
+        <option value="filme">Filme</option>
+        <option value="serie">Série</option>
+        <option value="jogo">Jogo</option>
+      </select>
+
+      <div id="extraFields"></div> 
+
+      <textarea id="sinopse" name="sinopse" placeholder="Sinopse" required></textarea>
+
+      <label>Imagem de capa (opcional)</label>
+      <input id="imagem" name="imagem" type="file" accept="image/*">
+
+      <button type="submit">Salvar</button>
+    </form>
+    <p id="contentFormMessage"></p>
+  </div>
+
+  <script src="login.js"></script>
+  <script src="content_form.js"></script>
+</body>
+</html>
