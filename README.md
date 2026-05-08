@@ -1,6 +1,6 @@
 # Projeto POO — Sistema de Gerenciamento de Midias
 
-## Descricao
+## Descrição
 
 Projeto Spring Boot que implementa uma API REST para gerenciamento de midias (filmes, series, jogos) com sistema de avaliacoes. Desenvolvido como parte de um trabalho academico de Programacao Orientada a Objetos (POO).
 
