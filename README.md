@@ -1,4 +1,4 @@
-# Projeto POO — Sistema de Gerenciamento de Midias
+# Projeto POO - Sistema de Gerenciamento de Midias
 
 ## Descrição
 
