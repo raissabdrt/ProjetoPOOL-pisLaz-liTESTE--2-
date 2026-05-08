@@ -1,4 +1,4 @@
-# CineLog - Plataforma de Avaliação de Mídias
+# LápisLazúli - Plataforma de Avaliação de Mídias
 
 Projeto desenvolvido para a disciplina de Programação Orientada a Objetos. CineLog é uma aplicação web full-stack que permite o cadastro, a visualização e a avaliação de mídias digitais, incluindo filmes, séries e jogos eletrônicos.
 
