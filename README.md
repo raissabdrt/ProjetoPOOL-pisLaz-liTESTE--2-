@@ -1,6 +1,6 @@
 # LápisLazúli - Plataforma de Avaliação de Mídias
 
-Projeto desenvolvido para a disciplina de Programação Orientada a Objetos. CineLog é uma aplicação web full-stack que permite o cadastro, a visualização e a avaliação de mídias digitais, incluindo filmes, séries e jogos eletrônicos.
+Projeto desenvolvido para a disciplina de Programação Orientada a Objetos. LápisLazúli é uma aplicação web full-stack que permite o cadastro, a visualização e a avaliação de mídias digitais, incluindo filmes, séries e jogos eletrônicos.
 
 ---
 
@@ -21,7 +21,7 @@ Projeto desenvolvido para a disciplina de Programação Orientada a Objetos. Cin
 
 ## Visão Geral
 
-O CineLog é uma aplicação web que funciona como um catálogo pessoal de mídias. O usuário pode se cadastrar, fazer login, navegar pelo acervo de filmes, séries e jogos, consultar detalhes de cada título e registrar suas avaliações com nota e comentário. O sistema impede que um mesmo usuário avalie a mesma mídia duas vezes, garantindo a integridade do banco de dados de avaliações.
+O LápisLazúli é uma aplicação web que funciona como um catálogo pessoal de mídias. O usuário pode se cadastrar, fazer login, navegar pelo acervo de filmes, séries e jogos, consultar detalhes de cada título e registrar suas avaliações com nota e comentário. O sistema impede que um mesmo usuário avalie a mesma mídia duas vezes, garantindo a integridade do banco de dados de avaliações.
 
 O back-end foi construído com Java e Spring Boot, expondo uma API REST. O front-end é composto por páginas HTML simples com JavaScript puro, consumindo essa API diretamente via `fetch`.
 
@@ -234,4 +234,4 @@ Caso os arquivos estejam em uma pasta separada, utilize uma extensão de servido
 
 ## Autores e Contexto
 
-Projeto desenvolvido como trabalho avaliativo da disciplina de Programação Orientada a Objetos. O objetivo foi aplicar na prática os principais pilares do paradigma — abstração, encapsulamento, herança e polimorfismo — em um sistema web funcional com integração entre back-end Java/Spring e front-end JavaScript.
+Projeto desenvolvido como trabalho avaliativo da disciplina de Programação Orientada a Objetos. O objetivo foi aplicar na prática os principais pilares do paradigma, abstração, encapsulamento, herança e polimorfismo, em um sistema web funcional com integração entre back-end Java/Spring e front-end JavaScript.
